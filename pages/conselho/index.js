@@ -13,7 +13,8 @@ export const getStaticProps = async () =>{
 
 
     return{
-      props:{ conselhoDoDog:data, thumbDoDog:dataDog}
+      props:{ conselhoDoDog:data, thumbDoDog:dataDog},
+      revalidate: 20
     }
   }
 
